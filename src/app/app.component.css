@@ -1,0 +1,30 @@
+
+h1 {
+  color: red;
+  font-size: 50px;
+  margin-left:100px ;
+}
+
+td {
+  width: 295px;
+  background-color: white;
+  padding: 5px;
+  color: black;
+}
+.btn-add{
+  margin-left: 5px;
+  width: 50;
+}
+.btn-del {
+  width: 50px;
+}
+input {
+  height: 40px;
+  width: 300px;
+}
+button {
+  height: 40px;
+  width: 50px;
+  background-color: brown;
+  color: white;
+}
