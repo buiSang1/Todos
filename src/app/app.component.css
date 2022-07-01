@@ -2,21 +2,29 @@
 h1 {
   color: red;
   font-size: 50px;
-  margin-left:100px ;
+  margin-left:100px;
+
+}
+table {
+  padding-top: 10px;
 }
 
 td {
   width: 295px;
   background-color: white;
-  padding: 5px;
+  padding: 3px;
   color: black;
+
+  border: 1px solid black;
 }
 .btn-add{
   margin-left: 5px;
   width: 50;
+  height: 45px;
 }
 .btn-del {
   width: 50px;
+  margin-left: 5px;
 }
 input {
   height: 40px;

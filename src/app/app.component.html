@@ -1,16 +1,18 @@
 <div class="container">
   <h1>{{title}}</h1>
-    <input type="text" #newTodo required>
-    <button class="btn-add" (click)="addTodo(newTodo.value); newTodo.value=''">Add</button>
+  <form [formGroup]="todoForm" (submit)="addTodo()">
+    <input type="text" formControlName="item" required>
+    <button class="btn-add"  type="submit">Add</button>
+    <!-- <input type="submit" value="ADD" (submit)="addTodo(newTodo.value)"> -->
+  </form>
   <table>
-    <tr *ngFor="let todo of todos">
-      <td>{{todo.label}}</td>
+    <tr *ngFor="let todo of todos; let i = index">
       <td>
-        <button class="btn-del" (click)="deleteTodo(todo)">Delete</button>
+        {{todo.description}}
       </td>
+        <button class="btn-del" (click)="deleteTodo(i)">Delete</button>
+
     </tr>
   </table>
 </div>
-<!-- <select #priority><option>1</option><option>2</option><option>3</option></select>
-and in the method call
-addTodo(newTodo.value, priority.value) -->
+
