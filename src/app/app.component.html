@@ -1,18 +1,19 @@
-<div class="container">
+<!-- <div class="container">
   <h1>{{title}}</h1>
   <form [formGroup]="todoForm" (submit)="addTodo()">
     <input type="text" formControlName="item" required>
     <button class="btn-add"  type="submit">Add</button>
-    <!-- <input type="submit" value="ADD" (submit)="addTodo(newTodo.value)"> -->
   </form>
+  <div class="wrapper">
   <table>
     <tr *ngFor="let todo of todos; let i = index">
       <td>
         {{todo.description}}
       </td>
         <button class="btn-del" (click)="deleteTodo(i)">Delete</button>
-
     </tr>
   </table>
-</div>
-
+  </div>
+</div>>
+ -->
+<app-inventory></app-inventory>

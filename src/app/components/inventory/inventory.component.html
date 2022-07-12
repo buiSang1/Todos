@@ -1,0 +1,19 @@
+<table id="customers" style="border-collapse: collapse;" >
+  <tr>
+      <th>Id</th>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Password</th>
+      <th>UserName</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user._id}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.password}}</td>
+      <td>{{user.username}}</td>
+    </tr>
+</table>
+<div>
+  <button nbButton  (click)="open()" >Thêm mơi</button>
+</div>
