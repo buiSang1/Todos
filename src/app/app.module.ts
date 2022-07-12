@@ -7,15 +7,20 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbCardModule, NbThemeModule, NbIconModule, NbSelectModule, NbDialogModule } from '@nebular/theme';
+import {
+  NbLayoutModule,
+  NbSidebarModule,
+  NbButtonModule,
+  NbCardModule,
+  NbThemeModule,
+  NbIconModule,
+  NbSelectModule,
+  NbDialogModule,
+} from '@nebular/theme';
 import { DialogComponent } from './components/dialog/dialog.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InventoryComponent,
-    DialogComponent
-  ],
+  declarations: [AppComponent, InventoryComponent, DialogComponent],
   imports: [
     BrowserModule,
     FormsModule,
@@ -33,9 +38,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
     NbSelectModule,
     NbDialogModule.forRoot(),
     NbDialogModule.forChild(),
-
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

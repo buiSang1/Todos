@@ -1,15 +1,14 @@
-import { gql }  from 'apollo-angular';
+import { gql } from 'apollo-angular';
 
-const USER_DESCRIPTION = gql`
-query{
-  user{
-    _id
-    email
-    name
-    password
-    username
-
+const USERS_DESCRIPTION = gql`
+  query {
+    user {
+      _id
+      email
+      name
+      password
+      username
+    }
   }
-
-}`
-export { USER_DESCRIPTION };
+`;
+export { USERS_DESCRIPTION };
